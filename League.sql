@@ -1,0 +1,2 @@
+create table archer (a_id INT PRIMARY KEY, name VARCAR(30) NOT NULL, level INT NOT NULL, gender VARCHAR(1) NOT NULL);
+create table score (s_id INT, a_id INT, b_style VARCHAR(1), score INT NOT NULL, ten INT, hits INT, week INT NOT NULL, primary key(s_id, a_id), foreign key(a_id) references archer(a_id));
